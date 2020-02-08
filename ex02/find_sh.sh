@@ -1,1 +1,1 @@
-find . -name "*.sh" -print | rev | cut -c4- | rev | cut -c3-
+find . -name "*.sh" | awk -F/ '{print $NF}' | rev | cut -c4- | rev
