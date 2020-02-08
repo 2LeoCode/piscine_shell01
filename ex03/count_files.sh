@@ -1,1 +1,1 @@
-find . -not -path '*/\.*' |wc -l |tr -d " "
+find -type d -o -type f | wc -l | tr -d ' '
